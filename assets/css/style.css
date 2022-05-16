@@ -1,0 +1,625 @@
+/* Global Styling  Start */
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+}
+html{
+    font-family: "MarkProBook";
+}
+button , a{
+    cursor: pointer;
+}
+button:focus{
+    outline: none;
+}
+h1{
+    font-family: "MarkProBold",sans-serif;
+}
+:root{
+   --primaryColor : #5B3F91;
+   --secoundaryColor:"#1A0741";   
+   --textPrimaryColor:"#312638";
+}
+.dropdown-toggle::after{
+    vertical-align: 0.1em!important;
+}
+
+.custom-primary-btn{
+    border-radius: 25px;
+    min-width: 220px;
+    padding: 8px 25px;
+    border: none;
+    color: var(--primaryColor);
+    border: 1px solid #442f6e;
+    margin-right: 10px;
+    font-family: "MarkProBook";
+    background-color: transparent;
+    transition: 0.3s ease-in-out;
+}
+.custom-primary-btn:hover , nav .side-content button:hover{
+    background-color: #442f6e;
+    border: 1px solid #442f6e;
+    color: white;
+}
+.active-btn{
+    color: white;
+    background-color: var(--primaryColor);
+}
+@font-face {
+    font-family: "MarkProBold";
+    src: url("../fonts/MarkProBold.ttf");
+}
+@font-face {
+    font-family: "MarkProBook";
+    src: url("../fonts/MarkProBook.otf");
+}
+@font-face {
+    font-family: "GilroyMedium";
+    src: url("../fonts/GilroyMedium.ttf");
+}
+@font-face {
+    font-family: "MarkProLight";
+    src: url("../fonts/MarkProLight.ttf");
+}
+
+/* Global Styling End  */
+
+
+/* Navigaiton Bar Start  */
+
+#linkstar-menu li a , nav .side-content a {
+    font-family: "MarkProBook",sans-serif;
+    color:#1e1e1e;
+    font-size: 1rem;
+    margin-right:10px;
+}
+nav .side-content a:hover{
+    text-decoration: none;
+}
+#linkstar-menu li a:active{
+    background-color: #f8f9fa;
+}
+nav .side-content a{
+    margin-right: 25px;
+}
+nav .side-content button{
+    color: white;
+    border-radius: 18px;   
+    padding: 4px 30px;
+    background-color: var(--primaryColor);
+    font-family: "MarkProBook",sans-serif;
+    border: none;
+    font-size: 1rem;
+    border: 1px solid;
+    transition: 0.3s ease-in-out;
+    border: 1px solid #442f6e;
+}
+
+/* Navigaiton Bar End */
+
+/* Webspace Section Start  */
+#webspace-section{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#webspace-section h1{
+    color:var(--primaryColor);
+    font-size: 5rem;
+    background-color: var(--primaryColor);
+    background-image: linear-gradient(90deg, var(--primaryColor), #1A0741);
+    background-size: 100%;
+    background-clip:text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+#webspace-section h2{
+    color: var(--textPrimaryColor);
+    font-family: "MarkProBook",sans-serif;
+    font-size: 2rem;
+    color: #312638;
+}
+#webspace-section h2 .one-link{
+    font-family: "MarkProBold",sans-serif;
+    color: var(--primaryColor);
+}
+/* Webspace Section End */
+
+/* Personal Space Section Start  */
+#personal-webspace-section{
+    position: relative;
+    background-image: linear-gradient(178deg, #EE3197 0%, #461D59 100%);
+    z-index: 2;
+}
+#personal-webspace-section h1{
+    font-size: 5rem;
+    color: white;
+    font-family: "MarkProBold",sans-serif;
+    text-align: center;
+
+}
+#personal-webspace-section .webspace-card{
+    width: 100%;  
+    min-height: 550px;
+    position: relative;
+    border-radius: 25px;
+    box-shadow: 0px 15px 25px #00000080;
+    margin: 40px 0px;
+    
+}
+.overlay-card{
+    border-radius: 25px;
+    color: white;
+    text-align: center;
+    padding: 0px 20px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+    cursor: pointer;
+    background: linear-gradient(180deg,hsla(0,0%,100%,0),rgba(0,0,0,.8));
+
+}
+.overlay-card h4{
+    font-family: "MarkProBold";
+}
+.overlay-card p {
+    font: "MarkProLight" ;
+}
+#personal-webspace-section .webspace-card video{
+    height: 100%;
+    border-radius: 25px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    cursor: pointer;
+    z-index: 20;
+}
+#personal-webspace-section .bottom-layer{
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+/* Personal Space Section End */
+
+
+/* Read to Sell Section Start  */
+#ready-sell-section{
+    padding-top: 90px ;
+}
+#ready-sell-section h1{
+    font-size:5rem;
+    text-align: center;
+    font-family:  "MarkProBook",sans-serif;
+    font-weight: bold;
+    background-color: var(--primaryColor);
+    background-image: linear-gradient(90deg, var(--primaryColor), #1A0741);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+#ready-sell-section h2{
+    color: var(--primaryColor);
+    font-family: "MarkProBook";
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    margin: 50px 0;
+
+}
+/* Read to Sell Section End */
+
+/* Package Section Start  */
+
+table .price{
+    font-family: "MarkProBook",sans-serif!important;
+}
+table .price , table .free  , .table .comming{
+    font-family: "MarkProBook",sans-serif!important;
+    color: var(--primaryColor);
+    font-weight: bold;
+}
+
+.table .month{
+    font-family: "MarkProBook",sans-serif!important;
+    color: var(--primaryColor);
+}
+table .month span:nth-child(1){
+    font-size: 1.3rem!important;
+}
+#package-section table thead tr th{
+    border-top: none;
+    border-bottom: 2px solid #1e1e1e;
+    font-family: "MarkProBold",sans-serif;
+    font-size: 1.5rem;
+
+}
+#package-section table th{
+    padding: 10px 0px;
+    vertical-align: middle;
+}
+#package-section table td , #package-section table th{
+    text-align: center;
+    vertical-align: middle;
+}
+#package-section table tbody td:nth-child(3) ,#package-section table thead th:nth-child(3) {
+    background-color: #9443FF14 ;
+}
+#package-section table tbody th:nth-child(1) , #package-section table thead th:nth-child(1){
+    text-align: start;
+}
+#package-section table tbody th:nth-child(1){
+    font-family: "MarkProLight";
+    color: black;
+}
+#package-section table i{
+    font-size: 1.7rem;
+    color: var(--primaryColor);
+    font-weight: 400;
+}
+.table{
+    margin-bottom: 0px;
+}
+.table-btn-container button{
+    min-width: 120px;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    border: 1px solid #442f6e;
+    color: white;
+    background-color: var(--primaryColor);
+    font-family: "MarkProBook",sans-serif;
+    padding: 3px;
+    transition: 0.3s ease-in-out;
+}
+.table-btn-container td:nth-child(4) button{
+    background-color: transparent;
+    color: #442f6e;
+}
+.table-btn-container button:hover{
+    border: 1px solid #442f6e!important;
+    background-color: #442f6e!important;
+    color: white!important;
+}
+.table-btn-container td button:nth-child(3){
+    color: red!important;
+}
+#package-section .package-text{
+    background: transparent linear-gradient(208deg,#0c3139,#060673);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#package-section .package-text .top{
+    padding: 0 20px;   
+}
+#package-section .package-text h1{
+    font-size: 4rem;
+    color: white;
+    font-family:  "MarkProBold",sans-serif;
+    margin-top: 100px;
+}
+#package-section .package-text .top p{
+    color: white;
+    font-family:  "MarkProBook",sans-serif;
+    font-weight: bold;
+}
+#package-section .package-text h1 span{
+    color: #8CC86D;
+    font-family: "MarkProBold",sans-serif;
+}
+#package-section .package-text .free-trail{
+    color: white;
+    text-align: center;
+    font-family:  "MarkProBook",sans-serif;
+    font-size: 0.8rem;
+}
+#package-section .package-text .free-trail a{
+    text-decoration: underline;
+}
+/* Package Section End */
+
+/* linkstar-section Section Start  */
+
+#linkstar-section .left-card {
+    text-align: end;
+    align-self: center;
+}
+#linkstar-section .right-card{
+    text-align: start;
+    align-self: center;
+}
+#linkstar-section .content{
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 120px;
+    min-height: 200px;
+}
+#linkstar-section .content h3{
+    font-family: "MarkProBook",sans-serif;   
+    font-weight: bold;
+}
+#linkstar-section .content p{
+    font-family: "MarkProLight",sans-serif;   
+    font-weight: 600;
+    margin-top: 20px;
+}
+.linkstar-card-container{
+    background-color: #050505;
+    border-radius: 50px;
+    overflow: hidden;
+    color: white;
+}
+.linkstar-card-container img{
+    max-width: 250px;
+
+}
+.gif-wrapper{
+    background: linear-gradient(222deg,#05050500,#050505),url("../images/linkstar/galaxy.gif");
+    text-align: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.gif-wrapper p{
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+.gif-wrapper h1{
+    padding: 50px 30px;
+    font-size: 5rem;
+    text-align: center;
+    font-family:  "MarkProBold",sans-serif;
+    padding-bottom: 5px;
+}
+
+.gif-wrapper h1 span{
+    background: transparent linear-gradient(270deg, #794BD1 0%, #CB9DEA 49%, #7947DF 100%);
+    background-size: 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+#linkstar-section .card-left-overlay{
+    background: transparent linear-gradient(270deg, #01010100 0%, #1C1C1C 100%)
+}
+#linkstar-section .card-right-overlay{
+    background: transparent linear-gradient(90deg, #01010100 0%, #1C1C1C 100%);
+}
+/* linkstar-section Section End  */
+
+
+/* Sample Linkstar Start  */
+#sample-linkstar .slick-list{
+    z-index: 99;
+    cursor: pointer;
+}
+#sample-linkstar{
+    background-color:#3F4FFA;
+    background-image: linear-gradient(178deg, #3F4FFA 0%, #202DC4 100%);
+    color: white;
+    font-family: "MarkProBold" ,"sans-serif";
+    margin-top: 150px;;
+}
+
+#sample-linkstar img{
+max-width: 450px;
+}
+#sample-linkstar .linkstar-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;   
+}
+#sample-linkstar .linkstar-container span{
+    color: #000C3D;
+}
+.linkstar-container a{
+    color:#30D89D;
+    text-decoration: underline;
+}
+
+#sample-linkstar .slick-dots{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    top: 0%;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 20px;
+}
+#sample-linkstar .slick-dotted.slick-slider{
+    margin-bottom: 0px;
+}
+#sample-linkstar .slick-dots li button:before{
+    font-size: 16px;
+    opacity: 1;
+}
+#sample-linkstar .slick-dots li.slick-active button:before{
+    color: white;
+}
+/* Sample Linkstar End */
+
+
+/* Footer Section Start  */
+#footer-section{
+    background-color: #f5f5f5;
+}
+
+#footer-section h6{
+    color: #474747;
+    font-family: "GilroyMedium",sans-serif;
+    font-weight: bold;
+
+}
+#footer-section .footer-wrapper{
+    padding: 110px 0;
+}
+
+#footer-section ul li {
+    list-style-type: none;
+}
+
+#footer-section ul li a{
+    text-decoration: none;
+    color: #474747;
+    font-family: "GilroyMedium",sans-serif;
+    font-size: 0.9rem;
+}
+
+#footer-section .footer-head{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#footer-section .social-icon i{
+    color: #474747;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+#footer-section .input-group-text{
+    background-color: white;
+    border-right: none;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+}
+#footer-section input.form-control{
+    max-width: 200px;
+    border-left: none;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+#footer-section input.form-control:active , #footer-section input.form-control:focus{
+    box-shadow: none;
+    outline: none;
+    border:1px solid #ced4da;
+}
+
+/* Footer Section End  */
+
+
+/* Media Query Start   */
+
+@media(max-width:991px){
+    h1{
+        font-size: 4rem!important;
+    }
+    #footer-section .signup{
+        margin-top: 10px;
+    }
+    .container{
+        padding-left: 15px!important;
+        padding-right: 15px!important;
+    }
+    #webspace-section{
+        text-align: center;
+    }
+    #linkstar-section .content{
+        padding: 60px;
+    }
+    .table-wrapper{
+        padding: 0;
+        margin-top: 50px;
+    }
+    #package-section .package-text h1{
+        text-align: center;
+        margin-top: 10px;
+    }
+    nav .side-content button{
+        display: block;
+        border: none;
+        background-color: transparent;
+        width: 100%;
+        text-align: start;
+        padding: 0;
+        margin-bottom: 10px;
+        color: #1e1e1e;   
+        padding: 0rem 0.5rem;
+        padding-left: 0px;
+    }
+    nav .side-content{
+        margin: 0!important;
+    }
+    nav .side-content a{ 
+        padding: 0.5rem;
+        padding-left: 0px;
+        width: 100%;
+    }
+    nav .side-content button:hover{
+        background-color: transparent;
+        border: none;
+        color: #1e1e1e;
+        
+    }
+}
+
+@media(max-width:576px){
+    .table-wrapper{
+        padding: 0 20px;
+    }
+}
+@media(max-width:768px){
+    #sample-linkstar img{
+        max-width: 300px;
+    }
+    #sample-linkstar .linkstar-container {
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 50px 10px 0px 10px;
+    }
+    #linkstar-section .right-card , #linkstar-section .left-card{
+        text-align: center!important;
+        padding: 20px 0;
+    }
+    #linkstar-section{
+        text-align: center;
+    }
+    .gif-wrapper h1{
+        font-size: 3rem;
+    }
+    #linkstar-section .content{
+        order: 2!important;
+    }
+}
+
+@media(max-width:486px){
+    h1{
+       font-size: 3rem!important;
+    }
+    #sample-linkstar img{
+        max-width: 250px;
+    }
+    #sample-linkstar .linkstar-container h4{
+        font-size: 1.5rem!important;
+    }
+    
+}
+
+/* Media Query End */
